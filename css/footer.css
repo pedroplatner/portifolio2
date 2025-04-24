@@ -1,0 +1,62 @@
+/* Footer Styles */
+:root {
+  --color-purple-50: #faf5ff;
+  --color-purple-100: #f3e8ff;
+  --color-purple-600: #9333ea;
+  --color-purple-900: #581c87;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+}
+
+.footer {
+  padding: 1.5rem;
+  background: url(/imagens/estrelas.jpg);
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-content {
+  max-width: 1152px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.copyright {
+  color: white;
+  font-size: 1rem;
+  letter-spacing: -0.025em;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.social-link {
+  color: var(--color-gray-600);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.social-link:hover {
+  color: var(--color-purple-600);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+              0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+
+
