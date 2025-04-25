@@ -2,7 +2,7 @@
 .astronauta {
     position: absolute;
     bottom: 400px; 
-    left: 47%; 
+    left: 900px; 
     transform: translateX(-50%); 
     z-index: 10; 
     background: none; 
@@ -30,6 +30,7 @@
   align-items: center; 
   padding: 0 10%;       
   height: 100vh;  
+  overflow-x: hidden;
     
 }
 

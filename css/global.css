@@ -17,6 +17,14 @@
   font-family: "Exo 2", sans-serif;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
 body{
   background: url(/imagens/Novo\ Projeto\ \(5\).jpg);
   
@@ -131,5 +139,254 @@ button {
     }
   }
   
+/* Ajustes para telas até 768px (tablets e dispositivos móveis) */
+@media (max-width: 768px) {
+  /* Seção de Habilidades */
+  .menu ul {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    padding: 0;
+  }
+  .principal {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;           
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .escrita_1 h3 {
+    font-size: 28px;
+  }
+
+  .escrita_2 {
+    text-align: center;
+    max-width: 100%;
+
+  }
+
+  .imagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .foto {
+    display: none;
+  }
+
+  .escrita_1 {
+    margin-top: 270px;
+    margin-left: 1%;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .astronauta{
+    display: none;
+  }
+
+  .neon a {
+    font-size: 18px;
+  }
+
+  .botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+/* Seção de Habilidades */
+
+.habilidades h2{
+  padding-top: 25px;
+}
+.skills {
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-container {
+    margin-left: 0;
+    width: 90%;
+    margin-top: 50px;
+}
+
+.astronauta-sentado {
+  position: absolute;
+  margin-top: -100px;
+  margin-left: 15px;
+  width: 20px;
+}
+
+.hotspot {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  background:none;
+}
+
+.hotspot.active {
+  visibility: visible;
+}
+
+#html-hotspot {
+  margin-left: -220px;
+}
+
+#css-hotspot {
+  margin-left: -175px;
+}
+
+#js-hotspot {
+  margin-left: -130px;
+}
+
+#bs-hotspot {
+  margin-left: -83px;
+}
+
+#info-title, #info-text {
+    font-size: 18px; /* Reduz o tamanho do texto para que fique legível */
+}
+
+.img_skills {
+  position: relative;  /* Certifique-se de que este estilo esteja presente */
+}
+
+  /* Seção de Projetos */
+  .projetos_1 {
+    padding: 20px;
+  }
+
+  .cards-project {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+    box-sizing: border-box;
+  }
+
+  .footer {
+    padding: 2rem 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-links {
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .footer-image-container img {
+    width: 50px;
+  }
+
+  #circulo{
+    width: 70vh
+  }
+
+  .astronauta-sentado {
+    width: 80px; /* Ajustar o tamanho da imagem para dispositivos móveis */
+    top: 70%; /* Posicionar no centro vertical */
+    left: 36%; /* Posicionar no centro horizontal */
+    transform: translate(-50%, -50%); /* Manter o astronauta centralizado */
+  }
+}
+
+/* Ajustes para telas até 480px (smartphones pequenos) */
+@media (max-width: 480px) {
+  /* Header */
+  .header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .escrita p {
+    font-size: 1px;
+  }
+
+  .neon a {
+    font-size: 16px;
+  }
+
+  .botoes {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .projetos_1 {
+    padding: 10px;
+  }
+  .cards-project {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .card {
+    width: 90%;
+  }
+  /* Footer */
+  .footer {
+    padding: 1.5rem 0;
+  }
+  .footer-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .social-links {
+    gap: 10px;
+    justify-content: center;
+  }
+  .footer-image-container img {
+    width: 90px;
+  }
+}
+
+/* Ajustes nas animações */
+@media (max-width: 768px) {
+  .astronauta-flutuando {
+    top: 10%;
+    width: 50px;
+  }
+
+  .astronauta-caindo {
+    display: none;
+  }
+
+  .foguete-subindo {
+    width: 60px;
+    bottom: -50px;
+  }
+
+  .meteor {
+    width: 5px;
+    height: 5px;
+  }
+}
+
   
   

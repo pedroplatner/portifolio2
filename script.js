@@ -89,6 +89,17 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// Função para alternar a visibilidade das hotspots ao clicar
+function toggleHotspotVisibility(event) {
+  event.target.classList.toggle('active');
+}
+
+// Adiciona o evento de clique nas hotspots
+document.querySelectorAll('.hotspot').forEach(function(hotspot) {
+  hotspot.addEventListener('click', toggleHotspotVisibility);
+});
+
+
 
   
 

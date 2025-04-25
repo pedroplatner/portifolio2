@@ -59,4 +59,41 @@
 }
 
 
+.footer-image-container {
+  position: absolute; 
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  z-index: -1; 
+}
 
+/* Estilo da imagem do astronauta */
+.footer-image-container img {
+  position: absolute;
+  bottom: 0;
+  left: -70px; 
+  z-index: -1; 
+  animation: astronautAnimation 10s infinite linear; 
+}
+
+/* Animação do astronauta */
+@keyframes astronautAnimation {
+  0% {
+      left: -70px; 
+      transform: rotate(0deg); 
+  }
+  50% {
+      left: 50%; 
+      transform: rotate(180deg); 
+  }
+  100% {
+      left: calc(100% - 70px); 
+      transform: rotate(360deg); 
+  }
+}
+
+.footer {
+  position: relative;
+  z-index: 1; 
+}
