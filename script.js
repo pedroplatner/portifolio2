@@ -99,6 +99,24 @@ document.querySelectorAll('.hotspot').forEach(function(hotspot) {
   hotspot.addEventListener('click', toggleHotspotVisibility);
 });
 
+const title = document.getElementById("info-title");
+  const text = document.getElementById("info-text");
+
+  function atualizarTextoPorTamanhoDeTela() {
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      // Mobile
+      title.textContent = "CLIQUE NAS LINGUAGENS";
+      text.textContent = "";
+    } else {
+      // Desktop
+      title.textContent = "PASSE O MOUSE";
+      text.textContent = "SOBRE UMA LINGUAGEM";
+    }
+  }
+
+  atualizarTextoPorTamanhoDeTela();
+  window.addEventListener("resize", atualizarTextoPorTamanhoDeTela);
+
 
 
   

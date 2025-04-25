@@ -38,6 +38,7 @@
     align-items: center;
     cursor: pointer;
     z-index: 10;
+    
 }
 
 /* Quando o mouse passar sobre o hotspot, exibe a skill-container */
