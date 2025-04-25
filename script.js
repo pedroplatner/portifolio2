@@ -1,13 +1,3 @@
-const header = document.querySelector('.header');
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 10) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
-    }
-  });
-
 /////////////////////////////ESCREVENDO SOZINHO//////////////////////////////
 document.addEventListener("DOMContentLoaded", function () {
     const texto = "Transformando ideias em interfaces incríveis com código limpo e design moderno.";
@@ -44,9 +34,8 @@ for (let i = 0; i < 50; i++) {
 
 
 
-
+/////////////////////////////informações de cada linguagem//////////////////////////////
 document.addEventListener("DOMContentLoaded", function () {
-  // Definir um objeto com as informações de cada linguagem
   const skillsInfo = {
       HTML: {
           title: "HTML",
@@ -72,29 +61,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
   hotspots.forEach(hotspot => {
       hotspot.addEventListener('mouseover', function () {
-          // Pega o nome da habilidade de data-skill
           const skill = hotspot.getAttribute('data-skill');
-
-          
           infoTitle.textContent = skillsInfo[skill].title;
           infoText.textContent = skillsInfo[skill].description;
       });
 
       hotspot.addEventListener('mouseout', function () {
-          
           infoTitle.textContent = "PASSE O MOUSE";
           infoText.textContent = "SOBRE UMA LINGUAGEM";
       });
   });
 });
 
-
-// Função para alternar a visibilidade das hotspots ao clicar
+////////////////// Função para alternar a visibilidade das hotspots ao clicar////////////////////////////////
 function toggleHotspotVisibility(event) {
   event.target.classList.toggle('active');
 }
 
-// Adiciona o evento de clique nas hotspots
 document.querySelectorAll('.hotspot').forEach(function(hotspot) {
   hotspot.addEventListener('click', toggleHotspotVisibility);
 });
@@ -113,7 +96,6 @@ const title = document.getElementById("info-title");
       text.textContent = "SOBRE UMA LINGUAGEM";
     }
   }
-
   atualizarTextoPorTamanhoDeTela();
   window.addEventListener("resize", atualizarTextoPorTamanhoDeTela);
 

@@ -5,8 +5,8 @@
     height: 60px;
     position: fixed;
     width: 100%;
-    top: 0; /* Garante que ele esteja sempre no topo */
-    z-index: 1000; /* Prioridade sobre outros elementos */
+    top: 0; 
+    z-index: 1000; 
     background: transparent;
     transition: all 0.4s ease;
 }

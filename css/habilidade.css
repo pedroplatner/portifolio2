@@ -41,7 +41,6 @@
     
 }
 
-/* Quando o mouse passar sobre o hotspot, exibe a skill-container */
 .hotspot:hover ~ .skill-container {
     visibility: visible;
 }

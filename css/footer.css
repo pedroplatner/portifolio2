@@ -68,7 +68,6 @@
   z-index: -1; 
 }
 
-/* Estilo da imagem do astronauta */
 .footer-image-container img {
   position: absolute;
   bottom: 0;
@@ -77,7 +76,6 @@
   animation: astronautAnimation 10s infinite linear; 
 }
 
-/* Animação do astronauta */
 @keyframes astronautAnimation {
   0% {
       left: -70px; 

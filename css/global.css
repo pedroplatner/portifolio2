@@ -211,7 +211,6 @@ button {
   }
 
 /* Seção de Habilidades */
-
 .habilidades h2{
   padding-top: 25px;
 }
@@ -264,14 +263,14 @@ button {
 }
 
 #info-title, #info-text {
-    font-size: 18px; /* Reduz o tamanho do texto para que fique legível */
+    font-size: 18px; 
 }
 
 .img_skills {
-  position: relative;  /* Certifique-se de que este estilo esteja presente */
+  position: relative;  
 }
 
-  /* Seção de Projetos */
+/* Seção de Projetos */
   .projetos_1 {
     padding: 20px;
   }
@@ -311,14 +310,13 @@ button {
   }
 
   .astronauta-sentado {
-    width: 80px; /* Ajustar o tamanho da imagem para dispositivos móveis */
-    top: 70%; /* Posicionar no centro vertical */
-    left: 36%; /* Posicionar no centro horizontal */
-    transform: translate(-50%, -50%); /* Manter o astronauta centralizado */
+    width: 80px; 
+    top: 70%; 
+    left: 36%; 
+    transform: translate(-50%, -50%); 
   }
 }
 
-/* Ajustes para telas até 480px (smartphones pequenos) */
 @media (max-width: 480px) {
   /* Header */
   .header {

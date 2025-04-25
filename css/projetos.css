@@ -1,7 +1,7 @@
 .projetos_1{
     background: url(/imagens/estrelas.jpg);
-    position: relative;  /* Permite o posicionamento absoluto da imagem dentro da seção */
-    overflow: hidden;    /* Esconde qualquer coisa que saia da área da seção */
+    position: relative; 
+    overflow: hidden;    
     height: 100vh;
     
 }
@@ -22,18 +22,18 @@
 
 .astronauta-caindo {
     position: absolute;
-    top: -100px; /* Inicia acima da seção para dar o efeito de queda */
+    top: -100px; 
     left: 20%;
     transform: translateX(-50%);
-    animation: cair 10s infinite; /* Aumentei para 10 segundos */
+    animation: cair 10s infinite; 
 }
 
 @keyframes cair {
     0% {
-        top: -100px; /* Começa acima da seção */
+        top: -100px; 
     }
     100% {
-        top: 100%; /* Finaliza no fundo da seção */
+        top: 100%; 
     }
 }
 
@@ -50,12 +50,12 @@
     perspective: 1000px;
     border: 1px solid #8148fa9d;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.418); /* Sombra suave */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.418); 
     position: relative;
     overflow: hidden;
 }
 
-/* Estrutura interna do card */
+
 .card2 {
     position: relative;
     width: 100%;
@@ -108,14 +108,14 @@
     text-align: center;
 }
 
-/* Container para os botões de ação */
+
 .button-container {
     display: flex;
     gap: 20px;
     margin-top: 20px;
 }
 
-/* Estilização dos botões */
+
 .btn-view, .btn-github {
     display: flex;
     align-items: center;
@@ -145,7 +145,6 @@
     font-size: 40px;
 }
 
-/* Animação do astronauta dentro do card */
 .astronauta-flutuando {
     position: absolute;
     top: -100px;
@@ -167,7 +166,7 @@
     }
 }
 
-/* Animação da chuva de meteoros */
+
 .meteoros {
     position: absolute;
     top: 0;
@@ -205,7 +204,6 @@
     }
 }
 
-/* Animação do foguete subindo */
 .foguete-subindo {
     position: absolute;
     bottom: -50px;
@@ -228,20 +226,18 @@
 
 
 
-
-
 .search-container {
     display: flex;
     align-items: center;
-    background-color: #5b3c8d; /* Cor do fundo, como na imagem */
+    background-color: #5b3c8d; 
     border-radius: 30px;
     padding: 10px 20px;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.418); /* Sombra suave */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.418); 
 }
 
 .search-container i {
     font-size: 34px;
-    color: white; /* Cor do ícone */
+    color: white; 
     margin-right: 15px;
 }
 
